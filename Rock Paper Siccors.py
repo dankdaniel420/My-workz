@@ -6,7 +6,8 @@ class Player:
         self.name = name
         self.hand = ''
         return
-        
+    
+    #player hand
     def hands(self):
         self.hand = ''
         self.hand = input ('Choose rock, paper or siccors: ')
@@ -19,14 +20,17 @@ class CPU:
     def __init__(self):
         self.hand = ''
         return
-
+    
+    #computer choice
     def cpuhand(self):
         answers = ['rock', 'paper', 'siccors']
         random.shuffle(answers)
         self.hand = answers[1]
         return 
 
+#results
 def outcome(phand,chand):
+    #add suspense
     print('ROCK')
     time.sleep(1)
     print('PAPER')
@@ -45,6 +49,7 @@ def outcome(phand,chand):
         print(f'DEFEAT!\nYour {phand} loses to CPUs {chand} ')
         return
 
+#Play again
 def gameon():
     answer = ''
     answer = input('Rematch? Y/N: ').capitalize()
@@ -70,6 +75,3 @@ def main():
     return
 
 main()
-
-
-

@@ -1,2 +1,2 @@
 # My-workz
-Documenting my journey in coding, kinda like a LinkedIn but for geeks hehe
+What the point of having a description and a README?
